@@ -1,0 +1,997 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #0079ba, #008e9a, #54a56b, #78b421);  
+  padding: 1px;
+  color: #ffffff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.logo img {
+  height: 60px; 
+  width: auto;
+  display: block;
+}
+
+.logo h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #fff; 
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* menu de navegación */
+nav {
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  gap: 15px;
+  margin: 0; 
+  padding: 0; 
+}
+
+.nav-item {
+  padding: 0 4px;
+}
+
+.nav-link {
+  font-size: 1.3em;
+  padding: 18px 0;
+  display: inline-block;
+}
+
+.texto-bienvenida {
+  margin-top: 0.5em;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+
+/* Botones generales */
+.btn {
+  background-color: #84c523;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #5c931a;
+  box-shadow: 0 4px 10px rgba(120, 180, 33, 0.3);
+}
+
+/* Botón Mi Cuenta - solo posición */
+#accountBtn {
+  background: #78b421;
+  color: #fff;
+  border: none;
+  border-radius: 30px;       /* Muy redondeado (pill shape) */
+  padding: 0.4em 1.6em;      /* Más padding para acentuar la forma */
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.2px;
+}
+
+#accountBtn:hover, #accountBtn:focus {
+  background: #008e9a;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0,121,186,0.18);
+}
+
+/* Buscador */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.search-form input[type="search"] {
+  padding: 7px 14px;
+  border: 2px solid #78b421;
+  border-radius: 18px 0 0 18px;
+  font-size: 1em;
+  outline: none;
+  font-weight: 500;
+  color: #54a56b;
+  background: #fff;
+  min-width: 200px;
+}
+
+.search-form input[type="search"]::placeholder {
+  color: #073114e8;
+  opacity: 0.7;
+}
+
+
+
+.search-form button[type="submit"] {
+  padding: 7px 20px;
+  border: 2px solid #008e9a;
+  border-radius: 0 18px 18px 0;
+  font-size: 1em;
+  font-weight: 600;
+  background:#008e9a ;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.search-form button[type="submit"]:hover {
+  background: #54a56b;
+  border-color: #54a56b;
+}
+/* Hero */
+.hero {
+  background: linear-gradient(
+      rgba(0, 121, 186, 0.61), 
+      rgba(121, 180, 33, 0.288)
+    ),
+    url('/imagenes/CLÍNICA_VETERINARIA.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 50px 20px;
+  min-height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.4rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Títulos */
+h2 {
+  text-align: center;
+  color: #333;
+  padding: 5px 2px;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  padding: 5px 2px;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.30rem; 
+  font-weight: 600;   
+  color: #fff;        
+  margin-top: 5px;
+  margin-bottom: 1px;
+  letter-spacing: 0.5px; 
+}
+
+h5 {
+  font-size: 1.15rem;   
+  font-weight: 600;
+  color: #333;       
+  margin-bottom: 6px;   
+}
+
+/* Servicios */
+
+/* Estilos para el mensaje de emergencia */
+.emergency-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.1rem; /* El mensaje sube para estar más cerca del botón */
+  padding: 1rem;
+}
+
+.emergency-message h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.emergency-message ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  font-size: 1.30em; /* Aumentamos el tamaño de la letra */
+  font-weight: 700; /* Hace la letra más gruesa */
+  line-height: 1.4;
+  color: #c71010; /* Color de advertencia para el texto */
+  max-width: 600px; /* Limita el ancho del texto para mejor lectura */
+}
+
+/* Estilos para el botón de Google Maps */
+.service-card.map-button {
+ /* Alineación interna */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 2px; /* Reducimos aún más el espacio entre el icono y el texto */
+
+ /* Eliminar todas las transiciones y animaciones */
+ transition: none;
+ animation: none;
+}
+
+.service-card.map-button .icon {
+ margin-bottom: 0.1em; /* Reducimos aún más el margen inferior del icono */
+}
+
+/* Forzar el texto extra a estar siempre visible */
+.service-card.map-button .extra-text {
+ display: block !important;
+ opacity: 1 !important;
+}
+
+/* Eliminar el efecto de hover */
+.service-card.map-button:hover,
+.service-card.map-button:focus-within {
+ box-shadow: 0 1px 10px #54a56b7a;
+ transform: none;
+ border-color: #d0e1f9;
+}
+/* Contenedor que centra el botón  */
+.button-center-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 20px 0;
+}
+
+.titulo-tabla {
+  color: #54a56b;
+  text-align: center;
+  margin-bottom: -1.0rem; /* Reducido de 1.2rem a 0.5rem */
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* lista de emergencias */
+.lista-emergencias {
+font-size: 1.10em;
+}
+
+.tabla-caja { 
+  margin: auto auto;
+  max-width: 700px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px; /* Ajusta este valor según cuánto quieras subirla */
+}
+
+
+/* Grid de servicios - Modificado para 2 filas de 3 columnas */
+.services-grid {
+  display: grid;
+  /* Cambiamos a 3 columnas */
+  grid-template-columns: repeat(3, 1fr);
+  /* Definimos explícitamente 2 filas */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2.5rem auto 3rem auto;
+  max-width: 1200px; /* Aumentamos el ancho máximo para acomodar 3 columnas */
+  padding: 2rem 1.5rem;
+}
+
+/* Nueva clase para disposición vertical */
+.services-grid.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Tarjeta de servicio - Estilo Minimalista y color de la paleta */
+.service-card {
+  background: #fff;
+  border-radius: 1.2em;
+  box-shadow: 0 1px 10px #54a56b7a;
+  padding: 1.5em 1.5em;
+  min-width: 600px;   /* Mucho más ancho */
+  max-width: 700px;   /* Mucho más ancho */
+  min-height: 120px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  border: 1.5px solid #d0e1f9; /* Borde sutil para destacar sobre fondo blanco */
+}
+
+/* Modificadores de color para cada botón si lo deseas */
+/* Ejemplo: .service-card.color-2 { background-color: #e6f7f9; border-color: #c2e6eb; } */
+
+/* Icono grande - Minimalista */
+.service-card .icon {
+  font-size: 2.6em;
+  margin-bottom: 0.5em;
+}
+
+/* Título dentro de la tarjeta */
+.service-card .title {
+  /* font-size: 1.22em; */ /* Tamaño original */
+  font-size: 1.4em;        /* Nuevo tamaño más grande */
+  font-weight: 700;
+  color: #0079ba;
+  margin-bottom: 0.3em;
+  letter-spacing: 0.5px;
+}
+
+/* Texto extra */
+.service-card .extra-text {
+  color: #54a56b;
+  /* font-size: 1em; */ /* Tamaño original */
+  font-size: 1.1em;     /* Nuevo tamaño más grande */
+  margin-top: 0.2em;
+  opacity: 0.92;
+  display: none;
+  transition: opacity 0.2s;
+  text-align: left;
+}
+
+.service-card:hover .extra-text,
+.service-card:focus-within .extra-text {
+  display: block;
+  opacity: 1;
+}
+
+/* Efecto Hover/Focus - Minimalista */
+.service-card:hover,
+.service-card:focus-within {
+  box-shadow: 0 8px 24px rgba(84, 165, 107, 0.425);
+  border-color: #54a56b;
+}
+
+/* Responsive: mantiene la estética simplista */
+@media (max-width: 900px) {
+  .service-card {
+    min-width: 220px;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .service-card .icon {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* pie de pagina */
+
+footer {
+  background: linear-gradient(to right, #015f92, #017781, #4c9762, #6ea31d); 
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  padding: 1rem;
+}
+
+/* Contacto superior */
+.contact-info-top {
+  background: url('/imagenes/3.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-size: 1.20em;
+  padding: 6px 32px 6px 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-info-top,
+.contact-info-top span,
+.contact-info-top a {
+  font-size: 1.15em;
+}
+
+.contact-info-top a {
+  color: #fff;
+  margin-left: 8px;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+
+.contact-info-top a:hover {
+  color: #a2fc1a;
+}
+
+.contact-info-top i {
+  font-size: 1.2em;   /* Puedes ajustar el tamaño según prefieras */
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
+
+/* Ajustes finales para la cuadrícula de servicios en pantallas grandes */
+@media (min-width: 901px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .zoonosis { grid-column: 1; grid-row: 1; }
+  .leyes    { grid-column: 1; grid-row: 2; }
+  .vacunacion { grid-column: 2; grid-row: 1; }
+  .preguntas  { grid-column: 2; grid-row: 2; }
+}
+
+/* Nueva sección: Tabla de vacunación */
+.tabla-vacunacion {
+  margin: auto auto;
+  max-width: 700px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px; /* Ajusta este valor según cuánto quieras subirla */
+}
+
+.titulo-tabla {
+  color: #54a56b;
+  text-align: center;
+  margin-bottom: -1.0rem; /* Reducido de 1.2rem a 0.5rem */
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.tabla-caja {
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(120,180,33,0.07);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 2rem; /* Espacio abajo de 3rem */
+}
+
+.tabla-verde {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(120,180,33,0.06);
+}
+
+.tabla-verde th, .tabla-verde td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+}
+
+.tabla-verde th {
+  background: #84c523;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08em;
+}
+
+.tabla-verde tr:nth-child(even) {
+  background: #f3fbe7;
+}
+
+.tabla-verde tr:hover {
+  background: #eaf8e6;
+}
+
+@media (max-width: 600px) {
+  .tabla-caja {
+    padding: 1rem 0.2rem;
+  }
+  .tabla-verde th, .tabla-verde td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.98em;
+  }
+}
+
+/* Accordion styles */
+.accordion-button {
+  font-size: 1.25em;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+  min-height: 64px;
+}
+
+/* Custom Styles for Accordion (eFAQ Section) */
+
+/* Main container for the FAQ section */
+.main.container.my-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Category Title Styling (e.g., Turnos y Servicios) */
+.category-title {
+    font-size: 2.2rem; /* Adjusted for consistency with h2/h3 */
+    color: #0079ba; /* Your primary blue for category titles */
+    text-align: center;
+    margin-bottom: 2rem; /* More space below category titles */
+    font-weight: 700; /* Bolder for prominence */
+    position: relative;
+    padding-bottom: 10px; /* Space for an underline effect */
+}
+
+.category-title i {
+    color: #78b421; /* Your vibrant green for icons */
+    margin-right: 10px;
+}
+
+/* Optional: Subtle underline for category titles */
+.category-title::after {
+    content: none;
+}
+
+/* Accordion Item Styling */
+.accordion-item {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+    border-radius: 2em; /* Más redondeado para igualar a los botones */
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Accordion Header and Button (the clickable part) */
+.accordion-header {
+    background-color: #f7fcfd; /* Very light blue background for headers */
+    border-bottom: none; /* Remove default Bootstrap border */
+}
+
+.accordion-button {
+    background-color: #f8ffe6 !important;
+    color: #015f92 !important;
+    font-size: 1.35em;
+    font-weight: 700;
+    border: 2px solid #b6e07c;
+    border-radius: 2em !important; /* Más redondeado */
+    margin-bottom: 1.1em;
+    box-shadow: 0 2px 12px rgba(120,180,33,0.07);
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.18rem #54a56bb4 !important;
+    border-radius: 2em !important; /* Mantiene el redondeo al enfocar */
+}
+
+.accordion-button::after {
+    color: #54a56b !important; /* Flecha verde */
+    font-size: 1.2rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+    color: #0079ba !important; /* Flecha azul cuando está abierto */
+}
+
+/* Accordion Body (the answer content) */
+.accordion-body {
+    background-color: #fff; /* White background for the answer */
+    color: #555; /* Slightly lighter text color for answers */
+    padding: 1.5rem; /* Consistent padding */
+    line-height: 1.7; /* Improved readability for body text */
+    border-top: 1px solid #f0f0f0; /* Subtle border above the body */
+    border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+}
+
+.accordion-body strong {
+    color: #333; /* Make strong text stand out */
+}
+
+.accordion-body ul,
+.accordion-body ol {
+    margin-top: 1rem;
+    padding-left: 1.5rem; /* Indent lists */
+}
+
+.accordion-body ul li,
+.accordion-body ol li {
+    margin-bottom: 0.5rem;
+}
+
+.accordion-body a {
+    color: #008e9a; /* Your accent green for links */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.accordion-body a:hover {
+    color: #54a56b; /* Slightly darker green on hover */
+    text-decoration: underline;
+}
+
+/* Table styling within accordion body */
+.accordion-body .table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.accordion-body .table th,
+.accordion-body .table td {
+    padding: 0.8rem;
+    border: 1px solid #e9ecef; /* Light border for table cells */
+    text-align: left;
+}
+
+.accordion-body .table thead.table-light th {
+    background-color: #f0f8f0; /* Light green background for table headers */
+    color: #333;
+    font-weight: 700;
+}
+
+.accordion-body .table tbody tr:nth-child(even) {
+    background-color: #fcfcfc; /* Zebra striping for table rows */
+}
+
+.accordion-body .table tbody tr:hover {
+    background-color: #f5f5f5; /* Subtle hover effect for table rows */
+}
+
+/* Specific styling for the emergency phone number line break */
+.accordion-body br {
+    display: block; /* Ensure line breaks function as expected */
+    content: ""; /* Needed for some browsers */
+    margin-bottom: 0.5em; /* Add some space after the break */
+}
+
+/* Modal de cuenta - Estética MiVeterinaria */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f8ffe6;
+  margin: 5% auto;
+  border-radius: 2em;
+  padding: 2.5em 2em 2em 2em;
+  border: 2px solid #b6e07c;
+  max-width: 370px;
+  box-shadow: 0 8px 32px rgba(120,180,33,0.13);
+  position: relative;
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+  animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(-30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.close {
+  color: #54a56b;
+  position: absolute;
+  top: 1.1em;
+  right: 1.3em;
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #0079ba;
+}
+
+.auth-form h2 {
+  color: #0079ba;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="text"],
+.auth-form input[type="number"],
+.auth-form input[type="password"],
+.input-auth {
+  width: 100%;
+  min-width: 0;
+  padding: 0.9em 1.2em; /* Aumenta el padding horizontal */
+  font-size: 1.1em;     /* Aumenta el tamaño de la fuente */
+  margin-bottom: 1em;
+  border: 1.5px solid #b6e07c;
+  border-radius: 1.2em;
+  background: #fff;
+  color: #333;
+  transition: border 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.auth-form input:focus {
+  border: 2px solid #54a56b;
+  outline: none;
+}
+
+.boton-container {
+  text-align: center;
+}
+
+.boton,
+.auth-form button[type="submit"] {
+  background: #54a56b;
+  color: #fff;
+  border: none;
+  border-radius: 1.2em;
+  padding: 0.8em 2.2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(120,180,33,0.08);
+  margin-top: 0.5em;
+}
+
+.boton:hover,
+.auth-form button[type="submit"]:hover {
+  background: #0079ba;
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 1.2em;
+  font-size: 1em;
+}
+
+.auth-form a {
+  color: #0079ba;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.auth-form a:hover {
+  color: #54a56b;
+}
+
+/* Centrar el botón Registrarse en el formulario de registro del modal */
+#registerForm button[type="submit"] {
+  display: block;
+  margin: 1em auto 0 auto;
+  background: #54a56b;
+  color: #fff;
+  border: none;
+  border-radius: 1.2em;
+  padding: 0.8em 2.2em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(120,180,33,0.08);
+}
+
+#registerForm button[type="submit"]:hover {
+  background: #0079ba;
+}
+
+/* menú desplegable */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  min-width: 210px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border-radius: 0.7em;
+  z-index: 100;
+  margin-top: 0.5em;
+  padding: 0.5em 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.7em 1.2em;
+  color: #0079ba;
+  text-decoration: none;
+  font-size: 1.18em; /* Aumenta el tamaño de la letra */
+  font-weight: 600;   /* Hace la letra más gruesa */
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: #f0f8e7;
+  color: #54a56b;
+}
+
+/* Nuevas clases para la disposición de servicios */
+.services-row {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2.5rem auto 3rem auto;
+  max-width: 1200px;
+  padding: 2rem 1.5rem;
+}
+
+.services-row.uniform {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; /* Reduce la separación entre columnas */
+  margin: 2.5rem auto 3rem auto;
+  max-width: 900px;
+  padding: 2rem 1.5rem;
+}
+
+.services-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Reduce la separación entre los botones verticales */
+  align-items: stretch;
+}
+
+.services-col.left {
+  align-items: flex-end;
+}
+
+.services-col.right {
+  align-items: flex-start;
+}
+
+footer,
+.footer-columns,
+.footer-section,
+.footer-bottom {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Agrupar selectores con propiedades compartidas */
+.service-card,
+.accordion-item,
+.modal-content {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Ejemplo simplificado */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Clase base para botones */
+.btn-base {
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-size: 1em;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+}
+
+/* Modificadores de color y tamaño */
+.btn-primary {
+  background-color: #84c523;
+  color: white;
+}
+
+.btn-secondary {
+  background: #78b421;
+  color: #fff;
+  padding: 0.4em 1.6em;
+  font-size: 1.15em;
+  border-radius: 30px;
+}
+
+/* Efectos de hover compartidos */
+.btn-primary:hover {
+  background-color: #5c931a;
+  box-shadow: 0 4px 10px rgba(120, 180, 33, 0.3);
+}
+
+.btn-secondary:hover {
+  background: #008e9a;
+  box-shadow: 0 4px 18px rgba(0,121,186,0.18);
+}
+
+
