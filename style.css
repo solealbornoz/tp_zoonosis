@@ -180,7 +180,7 @@ nav ul {
       rgba(0, 121, 186, 0.61), 
       rgba(121, 180, 33, 0.288)
     ),
-    url('/imagenes/CLÍNICA_VETERINARIA.jpg') no-repeat center center;
+    url('./imagenes/CLÍNICA_VETERINARIA.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -449,7 +449,7 @@ footer {
 
 /* Contacto superior */
 .contact-info-top {
-  background: url('/imagenes/3.jpg') no-repeat center center/cover;
+  background: url('./imagenes/3.jpg') no-repeat center center/cover;
   color: #fff;
   font-size: 1.20em;
   padding: 6px 32px 6px 16px;
@@ -563,13 +563,13 @@ footer {
   }
 }
 
-/* Accordion styles */
+/* Accordion styles 
 .accordion-button {
   font-size: 1.25em;
   padding-top: 1.1em;
   padding-bottom: 1.1em;
   min-height: 64px;
-}
+}*/
 
 /* Custom Styles for Accordion (eFAQ Section) */
 
@@ -994,4 +994,10 @@ footer,
   box-shadow: 0 4px 18px rgba(0,121,186,0.18);
 }
 
-
+/* Centrar el contenedor del botón destacado */
+.boton-guardia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
