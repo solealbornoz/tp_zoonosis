@@ -11,14 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="./imagenes/logo_4.png" type="image/png">
   <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400&display=swap');
-
-    html,
-    body {
-      font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
-    }
-  </style>
+ 
 </head>
 
 <body>
@@ -60,13 +53,13 @@
               <li><a href="Emergencias.html">Emergencia Veterinaria</a></li>
               <li><a href="zoonosis.html">Zoonosis</a></li>
               <li><a href="vacunacion.html">Vacunación</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
               <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
               <li><a href="leyes-animales.html">Leyes de los animales</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#formularios">Tus Turnos</a></li>
-          <li class="nav-item"><a class="nav-link" href="mascotas.html">Tus mascotas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formularios">Turnos</a></li>
+          <li class="nav-item"><a class="nav-link" href="mascotas.html">Mascotas</a></li>
           <button id="accountBtn" class="btn btn-outline-dark">Mi Cuenta</button>
         </ul>
       </nav>
@@ -87,6 +80,7 @@
         <h2>Mi Cuenta</h2>
         <form id="loginFormElement">
           <input type="text" placeholder="Ingrese su número de DNI" required />
+          <input type="password" placeholder="Ingrese su contraseña" required />
           <div class="boton-container">
             <button class="boton" type="submit">Ingresar</button>
           </div>
@@ -102,6 +96,7 @@
           <button type="submit">Ingresar</button>
         </form>
         <p>No Personal <a href="#" id="showLogin"> Mi Cuenta </a></p>
+  <p>¿No tenés usuario? <a href="#" id="showRegisterForm">Crear una cuenta</a></p>
       </div>
 
     </div>
