@@ -64,3 +64,13 @@ document.querySelectorAll('.accordion-item').forEach(item => {
     }, 200);
   });
 });
+
+// Mostrar/ocultar el botón al hacer scroll
+window.addEventListener('scroll', function() {
+  const backToTopButton = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    backToTopButton.style.display = 'flex';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
